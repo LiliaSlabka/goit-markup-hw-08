@@ -1,0 +1,77 @@
+.header-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+    display: flex;
+}
+
+.header-link {
+    margin-right: 50px;
+}
+
+.list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--basic-txt-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-color);
+    }
+}
+
+.group-contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--paragraph-txt-color);
+    font-style: normal;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-color);
+    }
+
+    &:hover .contact-icon,
+    &:focus .contact-icon {
+        fill: var(--accent-txt-color);
+    }
+}
+
+.list-item {
+    position: relative;
+}
+
+
+
+.contact-icon {
+    fill: var(--paragraph-txt-color);
+    margin-right: 10px;
+}

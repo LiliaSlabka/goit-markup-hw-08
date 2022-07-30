@@ -1,0 +1,79 @@
+.clients {
+  padding: 60px 0;
+}
+
+.clients-container {
+  @media screen and (min-width:1200px) {
+  width: 1170px;
+    height: 184px;
+    margin: auto;
+  }
+  }
+
+
+.clients-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--basic-txt-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.client-list {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+@media screen and (min-width:1200px) {
+  display: flex;
+justify-content: center;
+}
+}
+
+
+.client-link {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 92px;
+  background-color: var(--secondary-txt-color);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+   &:focus {
+   border-color: var(--accent-txt-color);
+   }
+
+   @media screen and (min-width:768px) {
+    width: 226px;
+   }
+
+     @media screen and (min-width:1200px){
+      width: 170px;
+     }
+}
+
+.clients-icon {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-icon {
+  fill: var(--paragraph-txt-color);
+}
+
+.client-link:hover .clients-icon,
+.client-link:focus .clients-icon {
+  fill: var(--accent-txt-color);
+}
