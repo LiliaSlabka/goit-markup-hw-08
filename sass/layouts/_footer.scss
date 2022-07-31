@@ -1,25 +1,72 @@
 .footer {
   background-color: var(--bg-color);
-  padding: 60px 0;
+  // padding: 60px 0;
+  padding-top: 60px;
+
+
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
+  padding-bottom: 60px;
+
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    // align-items: baseline;
+    gap: 75px;
+    padding-bottom: 0;
 }
+} 
 
 .footer-list {
-  padding-top: 20px;
-  margin-right: 70px;
-}
+  margin-bottom: 60px;
+    
+  }
 
 .footer-item {
-  margin-bottom: 9px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
 
-  &:last-child {
-    margin-bottom: 0;
+  @media screen and (min-width:1200px){
+    display: flex;
+    justify-content: flex-start;
   }
+}
+.group-contact {
+  padding: 0%;
+}
+
+.footer-contacts {
+  @media screen and (min-width: 1200px) {
+    gap: 70px;
+  }
+}
+
+.footer-group-contact {
+  font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--paragraph-txt-color);
+    font-style: normal;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus {
+      color: var(--accent-txt-color);
+    }
+  
+    &:hover .contact-icon,
+    &:focus .contact-icon {
+      fill: var(--accent-txt-color);
+    }
 }
 
 .footer-address {
@@ -40,9 +87,11 @@
 }
 
 .footer-icons {
-  margin-right: 90px;
-}
+  @media screen and (min-width: 1200px) {
+    gap: 93px;
 
+  }
+}
 .footer-social-title {
   margin-bottom: 20px;
   font-size: 14px;
@@ -50,17 +99,36 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
 }
 
 .footer-social-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0;
   margin-top: 20px;
 
   gap: 10px;
-}
+
+  margin-bottom: 60px;
+
+  @media screen and (min-width:1200px){
+
+  } 
+    
+  }
+
+
 
 .footer-social-link {
   display: flex;
@@ -76,26 +144,40 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   &:hover,
   &:focus {
     background-color: var(--accent-txt-color);
   }
 }
-
 .footer-icon {
   fill: var(--secondary-txt-color);
 }
 
 .footer-form {
-  display: flex;
-  flex-direction: row;
+  width: 450px;
+  margin: auto;
+
+  @media screen and (min-width: 1200px) {
+width: 358px;
+  }
+
 }
 
+
+
+.footer-contacts {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+
 .footer-input-subscription {
-  width: 360px;
+  width: 450px;
   height: 50px;
   margin-right: 12px;
+  margin-bottom: 20px;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -107,20 +189,28 @@
 
   outline: transparent;
 
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
 
-&::placeholder {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 
-        color: rgba(255, 255, 255, 0.6);
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
-
 
 .footer-btn {
   position: relative;
+
   width: 200px;
   margin: 0;
   padding: 0;
@@ -138,6 +228,13 @@
   color: white;
 
   cursor: pointer;
+  display: block;
+  margin: auto;
+
+  @media screen and (min-width:1200px) {
+    margin: 0;
+  }
+
 }
 
 .footer-form-icon {
@@ -145,4 +242,17 @@
   right: 5%;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.footer-forms{
+
+  @media screen and (min-width:1200px) {
+display: flex;
+  gap: 10px;
+  }
+  
+}
+
+.footer-contact {
+    margin-left: 15px;
 }

@@ -31,20 +31,20 @@
 
 .portfolio-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
 
-.portfolio-item {
-  margin-right: 8px;
-
-  &:last-child {
-    margin-right: 0;
+  @media screen and (min-width:768px) {
+    justify-content: center;
   }
+ 
+
 }
+
 
 .project {
-  padding: 94px 0;
+    padding-top: 60px;
 }
 
 .project-name {
@@ -65,12 +65,15 @@
 }
 
 .project-container {
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
+   padding: 20px 24px;
+   border: 1px solid #eeeeee;
   border-top: 0;
+// width: 450px;
+//   height: 294px;
 }
 
 .portfolio-desk {
+
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
