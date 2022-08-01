@@ -11,8 +11,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero/hero-bg_mob.jpg);
+ 
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/hero-bg_mob.jpg);
+
 
   // Для ретина экранов мобильная версия
 
@@ -41,7 +43,7 @@
 
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/hero/hero-bg_desk.jpg);
+      url(../images/hero/hero-bg_desk.jpg);
 
     // Для ретина экранов десктопная версия
 
