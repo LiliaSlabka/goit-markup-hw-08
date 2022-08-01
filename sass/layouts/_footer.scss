@@ -154,15 +154,18 @@
 }
 
 .footer-form {
-  width: 450px;
   margin: auto;
+
+@media screen and (min-width:768px){
+      display: flex;
+        justify-content: center;
+}
 
   @media screen and (min-width: 1200px) {
 width: 358px;
   }
 
 }
-
 
 
 .footer-contacts {
@@ -174,7 +177,7 @@ width: 358px;
 
 
 .footer-input-subscription {
-  width: 450px;
+  width: 100%;
   height: 50px;
   margin-right: 12px;
   margin-bottom: 20px;
@@ -198,7 +201,12 @@ width: 358px;
     color: rgba(255, 255, 255, 0.6);
   }
 
-  @media screen and (min-width: 768px) {
+
+@media screen and (min-width:480px){
+  width: 450px;
+}
+
+   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
   }
@@ -207,6 +215,8 @@ width: 358px;
     width: 358px;
   }
 }
+
+
 
 .footer-btn {
   position: relative;
